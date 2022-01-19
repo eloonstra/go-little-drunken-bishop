@@ -1,6 +1,8 @@
 # Go, Little Drunken Bishop!
 
-A small library for creating random art for the given bytes written in [Go](https://go.dev/).
+```
+go get github.com/eloonstra/go-little-drunken-bishop
+```
 
 ## Table of Contents
 
@@ -9,6 +11,7 @@ A small library for creating random art for the given bytes written in [Go](http
 - [Example](#example)
 - [License](#license)
 - [Contributing](#contributing)
+- [Future](#future)
 
 ## How does it work?
 
@@ -20,45 +23,25 @@ art is generated. I definitely recommend checking it out.
 Import the library.
 
 ```go
-import "github.com/elenaloonstra/go-little-drunken-bishop/pkg/drunkenbishop"
+import "github.com/eloonstra/go-little-drunken-bishop/pkg/drunkenbishop"
 ```
 
-Then, create a new drunken bishop by calling the `New` function. When you've created a new drunken bishop, you can
-generate a random art by calling the `Generate` function.
-
-## Example
-
-### Code
-
+Then call the `GenerateRandomArt` function as follows:
 ```go
-package main
-
-import (
-	"github.com/eloonstra/go-little-drunken-bishop/pkg/drunkenbishop"
-	"fmt"
-)
-
-func main() {
-	fmt.Println(drunkenbishop.New(22, 8, true, "Drunken Bishop").Generate([]byte("Drunken Bishop")))
-}
-
+drunkenbishop.GenerateRandomArt(17, 9, []byte("test"), true, "test title")
 ```
 
-### Result
-
-```
-+---[Drunken Bishop]---+
-| .o .    +.           |
-| o + .  + ..          |
-|. o o . .o ..         |
-| . o   o  o.          |
-|  . .   . . o         |
-|   .     o =          |
-|          + .         |
-|           .          |
-+----------------------+
-```
+And that's it! The result is a string containing the art.
 
 ## License
 
 This project is licensed under the MIT license.
+
+## Contributing
+
+All contributions are welcome. Feel free to open an issue or pull request.
+
+## Future
+
+The project is mostly finished, only the main function is not finished yet, so it's not possible to generate art from
+the command line.
