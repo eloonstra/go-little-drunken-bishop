@@ -33,6 +33,22 @@ drunkenbishop.GenerateRandomArt(17, 9, []byte("test"), true, "test title")
 
 And that's it! The result is a string containing the art.
 
+## Example
+An example of the output of the `GenerateRandomArt` function with "DrunkenBishop" as bytes and as title:
+```
++-[DrunkenBishop]-+
+|      . o.. .    |
+|       +   o o   |
+|        .   @ E  |
+|       .   = @   |
+|        S   + =  |
+|           . +   |
+|                 |
+|                 |
+|                 |
++-----------------+
+```
+
 ## License
 
 This project is licensed under the MIT license.
