@@ -59,5 +59,4 @@ All contributions are welcome. Feel free to open an issue or pull request.
 
 ## Future
 
-The project is mostly finished, only the main function is not finished yet, so it's not possible to generate art from
-the command line.
+The project is mainly finished; only the main function is not finished yet, so it's impossible to generate art from the command line.
